@@ -37,8 +37,25 @@
     border-color: #009ad8;
     border-radius: 20px;
 }
-
-section{
+#about{
+    background-color: #262936;
+}
+.header-info h2{
+    color: #37aec3;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.header-info p{
+    color: #d4d4d4;
+    line-height: 1.8;
+    font-size: 1 rem;
+}
+.image img{
+    width: 500px;
+    height: 460px;
+}
+#search{
     background-image: url(../images/pexels-mo-2658079.jpg);
     background-position: center;
     background-size: cover;
@@ -50,24 +67,23 @@ section{
     height: 350px;
 }
 .find-location{
-   padding-top: 70px; 
+   padding-top: 100px; 
+   width: 100%;
+   text-align: center;
 }
-.find-location input{
+.find-location .locations{
     outline: none;
     border: none;
     background-color: #1E202B;
     color: rgb(255, 255, 255);
-}
-.find-location .submit{
-    width: 100px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    width: 40%;
     height: 50px;
-    background-color: #109AD8;
-    right: 3px;
-    margin-top: 3px;
 }
 .forecast-table{
     background-color: #1E202B;
-    height: 250px;
+    height: 300px;
 }
 .forecast-table .forecast-container{
     color: rgba(255,255,255,.5);
@@ -80,6 +96,8 @@ section{
     overflow: hidden;
     width: 40%;
     margin: 0 auto;
+    width: 350px;
+
 }
 .forecast-table .forecast-container .today-forecast{
     background-color: #323544;
@@ -98,12 +116,23 @@ section{
     margin-right: 5px;
 }
 .forecast-table .forecast-container .today-forecast .forecast-content .temperature{
-    font-size: 4.5rem;
+    font-size: 60px;
     color: rgb(255, 255, 255);
     margin-bottom: 0;
 }
+.temp img{
+    width: 100px;
+    height: 100px;
+}
 .custom{
     color: #109AD8;
+}
+#mobileapp{
+    background-color: #323544;
+}
+.icon i{
+    font-size: 17rem;
+    color: #c2c2c2;
 }
 footer{
     background-color: #262936;
@@ -111,7 +140,6 @@ footer{
 .social-media a{
     width: 40px;
     height: 40px;
-    padding: 10px;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
@@ -120,11 +148,23 @@ footer{
     transition: .3s;
     margin: 0 2px;
     font-size: 20px;
-    line-height: 1;
+    line-height: 2;
 }
 .social-media a:hover{
     color: rgb(255, 255, 255);
     background: rgb(0, 154, 216);
+}
+.top-arrow{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1.8;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 @media (max-width: 1200px) and (min-width: 992px){
 }
@@ -150,9 +190,16 @@ footer{
         border: none;
     }
     /* end nav */
+    .image img{
+        width: 95%;
+    }
     .forecast-member{
         width: 100%;
     }
+    .find-location .locations{
+        width: 100%;
+    }
+
 }
 @media (max-width: 768px){
     /* start nav */
@@ -176,7 +223,13 @@ footer{
         border: none;
     }
     /* end nav */
+    .image img{
+        width: 95%;
+    }
     .forecast-member{
+        width: 100%;
+    }
+    .find-location .locations{
         width: 100%;
     }
 }

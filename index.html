@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="abderhman said">
+    <link rel="icon" href="images/icon.png
+    ">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Weather</title>
+    <title>Weather App</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg py-5">
+    <nav class="navbar navbar-expand-lg py-4" id="home">
       <div class="container">
         <div class="navbar-brand text-white">
               <div class="navbar-brand-text d-flex">
@@ -28,27 +31,41 @@
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">New</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Live cameras</a>
+              <a class="nav-link" href="#search">Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Photos</a>
+              <a class="nav-link" href="#mobileapp">Aobile App</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#Subscribe">Subscribe</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section> 
+    <section id="about" class=" px-2 px-md-5 py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="header-info px-2 px-md-5 py-4">
+            <h2>Weather App</h2>
+            <p>Having an up to date information about the weather helps us to take well-read decisions. These weather apps constantly update the forecasts for a day or hour or sometimes for even a minute. These can be simply termed as the compact weather devices, as they do not only tell about the temperature of that specific region instead they can describe the accurate time of the sunrise and sunset, the time of the rainfall, humidity levels, etc.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image">
+            <img src="images/raining-animate-1.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="search"> 
         <div class="layout position-absolute w-100"></div>
         <div class="container">
             <div class="find-location position-relative">
-                <input type="text" class="locations w-100 py-3 px-4 rounded-pill" placeholder="Find your location...">
-                <input type="button" class="submit rounded-pill position-absolute" value="Find" id="submit">
+                <input type="text" class="locations" placeholder="Find your location...">
             </div>
         </div>
     </section>
@@ -62,7 +79,12 @@
             </div>
             <div class="forecast-content p-4">
               <p class="region m-0 custom"></p>
-              <p class="temperature"></p>
+              <div class="temp d-flex justify-content-between align-items-center">
+                <p class="temperature"></p>
+                <div id="temp-image">
+
+                </div>
+              </div>
               <p class="description-weaher mb-0 custom"></p>
               <p class="minimal-graet-temperature"></p>
               <p class="humidity text-white mb-0"></p>
@@ -72,19 +94,39 @@
         </div>
       </div>
     </div>
-    <footer>
+    <section id="mobileapp" class=" px-2 px-md-5 py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="icon text-center">
+            <i class="fas fa-mobile"></i>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="header-info px-2 px-md-5 py-4 text-center ">
+            <h2>Mobile App</h2>
+            <p>This weather app is one of best free weather apps with full features:Local weather weather map (weather map service) and weather widgets.</p>
+            <button class="btn btn-outline-info rounded-pill my-2 me-2">Download Android</button>
+            <button class="btn btn-outline-info rounded-pill">Download ios</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="Subscribe">
       <div class="container">
-        <div class="py-5">
+        <div class="py-4">
           <div class="social-media">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-google-plus-g"></i></a>
             <a href="#"><i class="fab fa-pinterest-p"></i></a>
           </div>
-          <p class="mt-3 mb-0 fs-5 text-white">Designed by abderhman said</p>
+          <p class="mt-3 mb-0 text-white">Copyright © 2021 Designed by abderhman said. All rights reserved</p>
         </div>
       </div>
     </footer>
+    <div class="top-arrow">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/main.js"></script>
