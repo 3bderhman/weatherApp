@@ -48,44 +48,7 @@ function disPlay() {
     humidityElement.innerHTML = `Humidity: ${humidity}`;
     tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/${tempImage}@2x.png" alt="image">`
 }
-// function disPlayimage() {
-//     let tempImage = weatherDetails.weather[0].icon;
-//     let tempId = weatherDetails.weather[0].id;
-//     if (tempId>=200 && tempId<=232) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/11d@2x.png" alt="image">`
-//     }
-//     else if (tempId>=300 && tempId<=321 || tempId>=520 && tempId<=531) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/09d@2x.png" alt="image">`
-//     }
-//     else if (tempId>=500 && tempId<=504) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/10d@2x.png" alt="image">`
-//     }
-//     else if (tempId>=600 && tempId<=622 || tempId==511) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/13d@2x.png" alt="image">`
-//     }
-//     else if (tempId>=701 && tempId<=781) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/50d@2x.png" alt="image">`
-//     }
-//     else if (tempId>=800) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/${tempImage}@2x.png" alt="image">`
-//     }
-//     else if (tempId==800) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/${tempImage}@2x.png" alt="image">`
-//     }
-//     else if (tempId==801) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/${tempImage}@2x.png" alt="image">`
-//     }  
-//     else if (tempId==802) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/${tempImage}@2x.png" alt="image">`
-//     }   
-//     else if (tempId==803) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/${tempImage}@2x.png" alt="image">`
-//     }
-//     else if (tempId==804) {
-//         tempImageElement.innerHTML = `<img id="temp-image" src=" http://openweathermap.org/img/wn/${tempImage}@2x.png" alt="image">`
-//     }
-    
-// }
+
 locationInput.addEventListener("keyup", function() {
     let location = locationInput.value;
     getWeather(location)
